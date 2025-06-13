@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meme Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-500 via-pink-500 to-yellow-300 min-h-screen flex flex-col items-center justify-center text-white font-sans p-6">
+
+  <h1 class="text-4xl sm:text-5xl font-extrabold mb-8 text-center drop-shadow-lg">
+    😂 Meme Generator Zone 😂
+  </h1>
+
+  <!-- Meme Container -->
+  <div class="bg-white text-black rounded-2xl shadow-xl w-full max-w-lg p-6 space-y-6 flex flex-col items-center">
+    
+    <div id="meme-img"
+     class="w-full h-96 bg-gray-200 border-4 border-dashed border-purple-400 rounded-lg flex items-center justify-center overflow-hidden relative">
+  <span class="text-gray-500 text-lg absolute z-0">Your meme will show here!</span>
+</div>
+    <button
+      id="generate-btn"
+      class="bg-yellow-300 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+    >
+      🤪 Generate Me!
+    </button>
+
+  </div>
+
+  <footer class="mt-8 text-sm text-white opacity-80">Built with laughs and Tailwind ✨</footer>
+  <script src="generator.js"></script>
+</body>
+</html>
